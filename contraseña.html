@@ -1,6 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Registro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Formulario de Registro</h2>
+    <form method="POST" class="row g-3">
+      <div class="col-md-6">
+        <input type="text" name="nombre" class="form-control" placeholder="Nombre" required>
+      </div>
+      <div class="col-md-6">
+        <input type="text" name="apellido" class="form-control" placeholder="Apellido" required>
+      </div>
+
+      <div class="col-md-6">
+        <input type="email" name="email" class="form-control" placeholder="Correo electrónico" required>
+      </div>
+      <div class="col-md-6">
+        <input type="password" name="password" class="form-control" placeholder="Contraseña" required>
+      </div>
+
+      <div class="col-md-6">
+        <input type="number" name="edad" class="form-control" placeholder="Edad" step="0.5" required>
+      </div>
+      <div class="col-md-6">
+        <input type="text" name="codigo_postal" class="form-control" placeholder="Código Postal" maxlength="5" required>
+      </div>
+
+      <div class="col-12">
+        <select name="estado" class="form-select" required>
+          <option value="">Seleccione un estado</option>
+          <option>Aguascalientes</option>
+          <option>Baja California</option>
+          <option>Baja California Sur</option>
+          <option>Campeche</option>
+          <option>Chiapas</option>
+          <option>Chihuahua</option>
+          <option>CDMX</option>
+          <option>Coahuila</option>
+          <option>Colima</option>
+          <option>Durango</option>
+          <option>Estado de México</option>
+          <option>Guanajuato</option>
+          <option>Guerrero</option>
+          <option>Hidalgo</option>
+          <option>Jalisco</option>
+          <option>Michoacán</option>
+          <option>Morelos</option>
+          <option>Nayarit</option>
+          <option>Nuevo León</option>
+          <option>Oaxaca</option>
+          <option>Puebla</option>
+          <option>Querétaro</option>
+          <option>Quintana Roo</option>
+          <option>San Luis Potosí</option>
+          <option>Sinaloa</option>
+          <option>Sonora</option>
+          <option>Tabasco</option>
+          <option>Tamaulipas</option>
+          <option>Tlaxcala</option>
+          <option>Veracruz</option>
+          <option>Yucatán</option>
+          <option>Zacatecas</option>
+        </select>
+      </div>
+
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-primary px-4">Guardar</button>
+      </div>
+    </form>
+  </div>
+</body>
 </html>
